@@ -17,4 +17,22 @@ body {
   width: 1090px;
   height: 3202px;
   margin: 0 auto;
+}
+
+.calculator {
+  width: 629px;
+  height: 188px;
+  padding-top: 737px;
+  padding-left: 231px;
+}
+
+.separating-line {
+  width: 536px;
+  height: 1px;
+  background-color: #000000;
+  margin-left: auto;
+}
+
+.calc-header {
+  padding: 36px 255px;
 }/*# sourceMappingURL=main.css.map */
