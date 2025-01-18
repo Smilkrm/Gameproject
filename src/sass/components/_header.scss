@@ -1,0 +1,48 @@
+.container_header {
+  background-color: white;
+  width: 1090px;
+  margin: 0 auto;
+  outline: 1px solid chartreuse;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+.header_list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.header_item {
+  list-style: none;
+}
+.legendary_combo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.burger {
+  fill: rgba(0, 0, 0, 1);
+  height: 10px;
+  width: 10px;
+}
+.class{
+  margin-right: 8px;
+}
+.header_text {
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.63px;
+}
+.btn_day_night {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  margin-left: 360px;
+}
+.day_night {
+  width: 40px;
+  height: 20px;
+}
