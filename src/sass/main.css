@@ -19,7 +19,6 @@ body {
   margin: 0 auto;
 }
 
-
 .container_header {
   background-color: white;
   width: 1090px;
@@ -158,6 +157,7 @@ body {
   line-height: 24.2px;
   display: flex;
   text-align: center;
+}
 
 .calculator {
   width: 629px;
