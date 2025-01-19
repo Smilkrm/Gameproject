@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Gameproject/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gameproject</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/Gameproject/assets/index-68074567.js"></script>
+    <link rel="stylesheet" href="/Gameproject/assets/index-25ef65de.css">
+  </head>
+  <body>
+    <section class="header">
+    <div class="container_header">
+
+        <img class="header-logo" src="../img/header/logo.svg" alt="notgg">
+        <ul class="header_list">
+            <li class="header_item">
+                <div class="legendary_combo">
+                    <p class="header_text class">Інтерактив</p>
+                    <svg class="burger">
+                        <use href="../img/header/arow.svg#arow"></use>
+                    </svg>
+                </div>
+                </svg>
+            </li>
+            <li class="header_item">
+                <p class="header_text">Наша команда</p>
+            </li>
+            <li class="header_item">
+                <p class="header_text">Контакти</p>
+            </li>
+        </ul>
+        <button class="btn_day_night">
+            <svg class="day_night">
+                <use href="../img/header/day.svg#day"></use>
+            </svg>
+        </button>
+    </div>
+</section>
+    <section>
+    <div class="container_modal_first" data-modal>
+        <button class="modal__btn" data-modal-close>
+            <svg class="svg_no" width="17" height="17" fill="black">
+                <use href="../img/header/no.svg#no"></use>
+            </svg>
+        </button>
+        <p class="modal_text">
+            Привіт!<br>
+            Ви потрапили на сайт інтерактивних ігор та завдань<br>
+            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
+            Бажаємо Вам гарно провести час!
+        </p>
+        <p class="modal_parmpampam">
+            Введіть своє ім’я:
+        </p>
+        <label class="modal_form">
+            <input class="modal_input" name="name" placeholder="Ваше ім’я...">
+        </label>
+        <button class="modal_btn">Зберегти</button>
+    </div>
+    <div class="container_modal_second" data-modal>
+        <button class="modal__btn" data-modal-close>
+            <svg class="svg_no" width="17" height="17" fill="black">
+                <use href="../img/header/no.svg#no">
+                </use>
+            </svg>
+        </button>
+        <h3 class="thank">
+            Дякую за підписку!
+        </h3>
+    </div>
+</section>
+    <div class="container">
+      <section class="calculator">
+  <div class="separating-line top"></div>
+  <h3 class="calc-header">Калькулятор</h3>
+  <div class="calc-body">
+    <input type="text" class="calc-num input1" placeholder="Введіть число" />
+    <ul class="calc-signs">
+      <li><button class="calc-sign add">+</button></li>
+      <li><button class="calc-sign subtract">-</button></li>
+      <li><button class="calc-sign multiply">*</button></li>
+      <li><button class="calc-sign divide">/</button></li>
+    </ul>
+    <input type="text" class="calc-num input2" placeholder="Введіть число" />
+    <button class="calc-sign equals">=</button>
+    <div class="calc-result">Результат</div>
+  </div>
+  <div class="separating-line bottom"></div>
+</section>
+
+      <section id="leap-year__section">
+    <div class="container">
+        <div class="cheak-age-night">
+            <h1 class="games__leap">Популярні інетрактивні ігри</h1>
+        <div class="vector__leap"></div>
+        <h1 class="title__leap">Перевір в який рік ти народився</h1>
+        <div class="leap__list">
+            <input class="input__leap"  type="text" placeholder="Введіть рік народження" id="leap-input">
+            <button class="input-but__leap" type="button">
+                <svg class="leap-year__svg">
+                    <use href="./images/check-the-born-year/check-your-born-year.svg#icon-dandruff"></use>
+                </svg>
+            </button>
+            <p class="yesNo__leap" id="yes-no-leap">
+
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+    </div>
+    
+    <script src="js-files/calculator.js"></script>
+  </body>
+</html>
