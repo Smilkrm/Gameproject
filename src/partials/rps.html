@@ -1,0 +1,26 @@
+<section class="rps">
+    <div class="linetoprsp"></div>
+    <div class="rpsbody">
+        <div class="rpsmain">
+            <h1 class="textmain">Камінь - ножиці - папір</h1>
+            <div class="rpschoice" id="choices">
+                <button class="choice" onclick="playGame('Камінь')">
+                    <img src="./img/stone.png" alt="">
+                </button>
+                <button class="choice" onclick="playGame('Ножиці')">
+                    <img src="./img/scissors.png" alt="">
+                </button>
+                <button class="choice" onclick="playGame('Папір')">
+                    <img src="./img/paper.png" alt="">
+                </button>
+            </div>
+            <div id="resultDisplay"></div>
+            <div id="computerDisplay">Варіант комп'ютера</div>
+        </div>
+        <div class="scoreDisplay">
+            Рахунок: 
+            Комп'ютер - <span id="computerScoreDisplay">0</span>
+            Ви - <span id="playerScoreDisplay">0</span>
+        </div>
+    </div>
+</section>
