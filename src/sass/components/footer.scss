@@ -1,0 +1,77 @@
+footer {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo img {
+    width: 165px;
+    height: 70px;
+    margin-left: 20px; /* Move the logo to the right */
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-left: 20px; /* Move the contact info a little to the right */
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .email-input {
+    display: flex;
+    flex-direction: row; /* Keep input and button side by side */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .email-input input {
+    width: 347px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Set input radius to 20px */
+    background-color: #D7D7D7;
+    font-family: 'Montserrat Alternates', sans-serif; /* Ensure same font */
+  }
+  
+  .email-input button {
+    width: 130px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Set button radius to 20px */
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Montserrat Alternates', sans-serif; /* Same font as the rest */
+  }
+  
+  .email-input button:hover {
+    background-color: #333;
+  }
+  
+  /* Adjustments for small text */
+  .small-text {
+    font-size: 8px;
+    color: gray;
+    margin-top: 5px;
+    line-height: 7px;
+    height: 7px;
+    text-align: center;
+    width: 100%; /* Ensure it spans the full width under the input and button */
+  }
+  
