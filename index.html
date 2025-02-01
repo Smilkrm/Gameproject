@@ -13,21 +13,27 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/Gameproject/assets/index-5ba017de.js"></script>
-    <link rel="stylesheet" href="/Gameproject/assets/index-8804a781.css">
+    <script type="module" crossorigin src="/Gameproject/assets/index-f39f40ac.js"></script>
+    <link rel="stylesheet" href="/Gameproject/assets/index-0ffe0b46.css">
   </head>
   <body>
     <section class="header">
     <div class="container_header">
-
-        <img class="header-logo" src="" alt="notgg">
+        <img class="header-logo" src="../img/header/logo.svg" alt="notgg">
         <ul class="header_list">
             <li class="header_item">
                 <div class="legendary_combo">
-                    <p class="header_text class">Інтерактив</p>
-                    <svg class="burger">
-                        <use href=""></use>
-                    </svg>
+                    <div class="dropdown">
+                        <button class="dropdown-button header_text class">Інтерактив</button>
+                        <svg class="burger">
+                            <use href="../img/header/arow.svg#arow"></use>
+                        </svg>
+                        <div class="dropdown-content">
+                            <a class="dropdown-text" href="#">Числовий</a>
+                            <a class="dropdown-text" href="#">Ігровий</a>
+                            <a class="dropdown-text" href="#">Ознайомчий</a>
+                        </div>
+                    </div>
                 </div>
                 </svg>
             </li>
@@ -40,36 +46,40 @@
         </ul>
         <button class="btn_day_night">
             <svg class="day_night">
-                <use href=""></use>
+                <use href="../img/header/day.svg#day"></use>
             </svg>
         </button>
+        <span class="hi" id="user-name"></span>
     </div>
 </section>
     <section>
-    <div class="container_modal_first" data-modal>
-        <button class="modal__btn" data-modal-close>
-            <svg class="svg_no" width="17" height="17" fill="black">
-                <use href=""></use>
-            </svg>
-        </button>
-        <p class="modal_text">
-            Привіт!<br>
-            Ви потрапили на сайт інтерактивних ігор та завдань<br>
-            Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
-            Бажаємо Вам гарно провести час!
-        </p>
-        <p class="modal_parmpampam">
-            Введіть своє ім’я:
-        </p>
-        <label class="modal_form">
-            <input class="modal_input" name="name" placeholder="Ваше ім’я...">
-        </label>
-        <button class="modal_btn">Зберегти</button>
+    <button class="none" data-modal-open></button>
+    <div class=" backdrop is-hidden" data-modal>
+        <div class="container_modal_first modal">
+            <button class="modal__btn " data-modal-close>
+                <svg class="svg_no" width="17" height="17" fill="black">
+                    <use href="../img/header/no.svg#no"></use>
+                </svg>
+            </button>
+            <p class="modal_text">
+                Привіт!<br>
+                Ви потрапили на сайт інтерактивних ігор та завдань<br>
+                Надіємось, що вам сподобається і ви отримаєте позитивні емоції!<br>
+                Бажаємо Вам гарно провести час!
+            </p>
+            <p class="modal_parmpampam">
+                Введіть своє ім’я:
+            </p>
+            <label class="modal_form">
+                <input class="modal_input" name="name" placeholder="Ваше ім’я..." id="name-input">
+            </label>
+            <button class="modal_btn" id="save-button" data-modal-close-two>Зберегти</button>
+        </div>
     </div>
     <div class="container_modal_second" data-modal>
         <button class="modal__btn" data-modal-close>
             <svg class="svg_no" width="17" height="17" fill="black">
-                <use href="">
+                <use href="../img/header/no.svg#no">
                 </use>
             </svg>
         </button>
@@ -146,6 +156,8 @@
     </div>
     
     <script src="./js-files/calculator.js"></script>
+    <script src="./js-files/modal.js"></script>
+    <script src="./js-files/header.js"></script>
     <script src="./js-files/rps.js"></script>
     <script src="./js-files/guess-the-number.js"></script>
     <script src="./js-files/year-born.js"></script>
