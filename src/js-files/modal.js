@@ -1,23 +1,21 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    closeModalBtnTwo: document.querySelector("[data-modal-close-two]"),
+    modal: document.querySelector("[data-modal]"),
   };
-  modal.classList.remove('hidden');
-  refs.closeModalBtn.addEventListener('click', toggleModal);
 
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtnTwo.addEventListener("click", toggleModal);
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-    document.body.classList.toggle('no-scroll');
+    refs.modal.classList.toggle("is-hidden");
+    document.body.classList.toggle("no-scroll");
   }
+  window.addEventListener("load", () => {
+    refs.modal.classList.remove("is-hidden");  
+    document.body.classList.add("no-scroll");
+  });
 })();
-modal.addEventListener('click', event => {
-  if (event.target === modal) {
-    modal.classList.add('hidden');
-  }
-});
-// let userFirstName = prompt("what your name");
-// console.log(userFirstName);
-// let message = (`hi ${userFirstName}`)
-// alert(message);
+

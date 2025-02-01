@@ -1,5 +1,5 @@
 <section>
-    <button data-modal-open></button>
+    <button class="none" data-modal-open></button>
     <div class=" backdrop is-hidden" data-modal>
         <div class="container_modal_first modal">
             <button class="modal__btn " data-modal-close>
@@ -17,9 +17,9 @@
                 Введіть своє ім’я:
             </p>
             <label class="modal_form">
-                <input class="modal_input" name="name" placeholder="Ваше ім’я...">
+                <input class="modal_input" name="name" placeholder="Ваше ім’я..." id="name-input">
             </label>
-            <button class="modal_btn">Зберегти</button>
+            <button class="modal_btn" id="save-button" data-modal-close-two>Зберегти</button>
         </div>
     </div>
     <div class="container_modal_second" data-modal>
