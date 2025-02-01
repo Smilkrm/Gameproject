@@ -1,14 +1,20 @@
 <section class="header">
     <div class="container_header">
-
-        <img class="header-logo" src="" alt="notgg">
+        <img class="header-logo" src="../img/header/logo.svg" alt="notgg">
         <ul class="header_list">
             <li class="header_item">
                 <div class="legendary_combo">
-                    <p class="header_text class">Інтерактив</p>
-                    <svg class="burger">
-                        <use href=""></use>
-                    </svg>
+                    <div class="dropdown">
+                        <button class="dropdown-button header_text class">Інтерактив</button>
+                        <svg class="burger">
+                            <use href="../img/header/arow.svg#arow"></use>
+                        </svg>
+                        <div class="dropdown-content">
+                            <a class="dropdown-text" href="#">Числовий</a>
+                            <a class="dropdown-text" href="#">Ігровий</a>
+                            <a class="dropdown-text" href="#">Ознайомчий</a>
+                        </div>
+                    </div>
                 </div>
                 </svg>
             </li>
@@ -21,8 +27,9 @@
         </ul>
         <button class="btn_day_night">
             <svg class="day_night">
-                <use href=""></use>
+                <use href="../img/header/day.svg#day"></use>
             </svg>
         </button>
+        <span class="hi" id="user-name"></span>
     </div>
 </section>
